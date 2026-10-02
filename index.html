@@ -1,31 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Royal 21 Arcade</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Royal 21 — Arcade District</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="hud">
-  <div class="brand">♠ <span>ROYAL 21</span></div>
-  <div class="stats">
-    <div>LEVEL <b id="level">1</b></div>
-    <div>XP <b id="xp">0</b></div>
-    <div>SCORE <b id="score">0</b></div>
+  <div id="hud">
+    <div class="brand"><span class="brand-mark">♠</span><span>ROYAL 21</span><small>ARCADE DISTRICT</small></div>
+    <div class="stats">
+      <div><span>LEVEL</span><b id="level">1</b></div>
+      <div><span>XP</span><b id="xp">0</b></div>
+      <div><span>SCORE</span><b id="score">0</b></div>
+    </div>
   </div>
-</div>
-<canvas id="game"></canvas>
-<div id="help">WASD / ARROWS = MOVE &nbsp; • &nbsp; E = PLAY &nbsp; • &nbsp; ESC = LEAVE</div>
-<div id="prompt"></div>
-<div id="toast"></div>
-<div id="modal" class="hidden">
-  <div id="modalBox">
-    <button id="close">×</button>
-    <h2 id="gameTitle"></h2>
-    <div id="gameContent"></div>
+
+  <canvas id="game" aria-label="Royal 21 free-roaming arcade game"></canvas>
+
+  <div id="miniHelp">
+    <span><kbd>WASD</kbd> / <kbd>ARROWS</kbd> Move</span>
+    <span><kbd>E</kbd> Interact</span>
+    <span><kbd>ESC</kbd> Leave game</span>
   </div>
-</div>
-<script src="app.js"></script>
+
+  <div id="interaction">
+    <strong id="interactionKey">E</strong>
+    <span id="interactionText">PLAY</span>
+  </div>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <div id="modal" class="hidden">
+    <div id="modalBox">
+      <button id="close" aria-label="Close game">×</button>
+      <div class="modal-eyebrow">ARCADE CHALLENGE</div>
+      <h2 id="gameTitle"></h2>
+      <div id="gameContent"></div>
+    </div>
+  </div>
+
+  <div id="mapHint">ROYAL 21 • FREE ROAM • NO BETTING</div>
+  <script src="app.js"></script>
 </body>
 </html>
