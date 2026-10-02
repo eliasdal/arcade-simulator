@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Royal 21 — Virtual Casino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+
+  <header class="topbar">
+    <button class="brand" onclick="view('lobby')">♠ <span>ROYAL</span> <b>21</b></button>
+
+    <nav>
+      <button onclick="view('lobby')">Lobby</button>
+      <button onclick="view('slots')">🎰 Slots</button>
+      <button onclick="view('blackjack')">🃏 Blackjack</button>
+      <button onclick="view('roulette')">🎡 Roulette</button>
+      <button onclick="view('dice')">🎲 Dice</button>
+      <button onclick="view('profile')">👤 Profile</button>
+    </nav>
+
+    <div class="wallet">
+      💰 <strong id="balance">10,000</strong>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="toast"></div>
+  <div id="modal"></div>
+
+  <footer>
+    ROYAL 21 • Virtual chips only • For entertainment/coding practice
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
