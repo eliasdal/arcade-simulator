@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Royal 21 Arcade</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="hud">
+  <div class="brand">♠ <span>ROYAL 21</span></div>
+  <div class="stats">
+    <div>LEVEL <b id="level">1</b></div>
+    <div>XP <b id="xp">0</b></div>
+    <div>SCORE <b id="score">0</b></div>
+  </div>
+</div>
+<canvas id="game"></canvas>
+<div id="help">WASD / ARROWS = MOVE &nbsp; • &nbsp; E = PLAY &nbsp; • &nbsp; ESC = LEAVE</div>
+<div id="prompt"></div>
+<div id="toast"></div>
+<div id="modal" class="hidden">
+  <div id="modalBox">
+    <button id="close">×</button>
+    <h2 id="gameTitle"></h2>
+    <div id="gameContent"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
